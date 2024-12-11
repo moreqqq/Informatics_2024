@@ -4,7 +4,7 @@ import "fmt"
 
 type Gaming struct {
 	Name            string
-	Сharacteristics string
+	Characteristics string
 	Price           float64
 	SailStart       float64
 }
