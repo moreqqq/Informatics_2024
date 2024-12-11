@@ -20,9 +20,9 @@ func (g *Gaming) SetPrice(newPrice float64) {
 	g.Price = newPrice
 }
 func (g *Gaming) UpdateCharacteristics(newCharacteristics string) {
-	g.Сharacteristics = newCharacteristics
+	g.Characteristics = newCharacteristics
 }
 
 func (g *Gaming) getInfo() string {
-	return fmt.Sprintf("Name: %s, Characteristics: %s, Price: %.2f,SailStart: %2.f", g.Name, g.Сharacteristics, g.Price, g.SailStart)
+	return fmt.Sprintf("Name: %s, Characteristics: %s, Price: %.2f,SailStart: %2.f", g.Name, g.Characteristics, g.Price, g.SailStart)
 }
