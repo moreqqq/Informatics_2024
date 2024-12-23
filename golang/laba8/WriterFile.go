@@ -15,5 +15,4 @@ func WriteDataToFile(filename string) {
 
 	f.WriteString(name)
 	f.WriteString(surname)
-
 }
