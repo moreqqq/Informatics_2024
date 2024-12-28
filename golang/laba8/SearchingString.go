@@ -1,15 +1,15 @@
 package laba8
 
-func SearchingString(filename, valueForSearch string) (int, bool) {
+func SearchingString(filename, valueForSearch string) bool {
 	if valueForSearch == "" {
-		return 0, false
+		return false
 	}
 	values := ReadDataFromFile(filename)
 
 	for _, value := range values {
 		if value == valueForSearch {
-			return 1, true
+			return true
 		}
 	}
-	return 0, false
+	return false
 }

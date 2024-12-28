@@ -23,12 +23,12 @@ func RunLab8() {
 	}
 
 	fmt.Println("Введите строку, которую хотите найти в файле: ")
-	var StringForFind string
-	fmt.Scan(&StringForFind)
-	n, _ := SearchingString(name, StringForFind)
-	if n == 1 {
-		fmt.Printf("Слово найденно на строке %d", n)
+	var SearchString string
+	fmt.Scan(&SearchString)
+	isFind := SearchingString(name, SearchString)
+	if isFind {
+		fmt.Printf("Слово найдено на строке %t", isFind)
 	} else {
-		fmt.Println("Слово не найденно")
+		fmt.Println("Слово не найдено")
 	}
 }
